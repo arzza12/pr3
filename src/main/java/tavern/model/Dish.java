@@ -1,4 +1,11 @@
 package tavern.model;
 
-public class Dish {
+public interface Dish {
+    String getName();
+    double getPrice();
+    String getDescription();
+
+    default String getDisplayName() {
+        return getName();
+    }
 }

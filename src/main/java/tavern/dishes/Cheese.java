@@ -1,4 +1,9 @@
 package tavern.dishes;
 
-public class Cheese {
+import tavern.model.BaseDish;
+
+public class Cheese extends BaseDish {
+    public Cheese() {
+        super("Сыр", 10.0, "Копченый сыр из Рифтена");
+    }
 }
